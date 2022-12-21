@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825BCDED2952DDBD00DF8296 /* ExperimentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825BCDEC2952DDBD00DF8296 /* ExperimentsViewController.swift */; };
+		825BCDF02952F34700DF8296 /* ReorderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825BCDEF2952F34700DF8296 /* ReorderCollectionViewController.swift */; };
 		8260A47C288A53150032CEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A47B288A53150032CEE3 /* AppDelegate.swift */; };
 		8260A47E288A53150032CEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A47D288A53150032CEE3 /* SceneDelegate.swift */; };
 		8260A480288A53150032CEE3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A47F288A53150032CEE3 /* TextView.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		825BCDEC2952DDBD00DF8296 /* ExperimentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentsViewController.swift; sourceTree = "<group>"; };
+		825BCDEF2952F34700DF8296 /* ReorderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderCollectionViewController.swift; sourceTree = "<group>"; };
 		8260A478288A53150032CEE3 /* uikit-playgroud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uikit-playgroud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8260A47B288A53150032CEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8260A47D288A53150032CEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 				825BCDEC2952DDBD00DF8296 /* ExperimentsViewController.swift */,
 			);
 			path = "experiments-table";
+			sourceTree = "<group>";
+		};
+		825BCDEE2952F32000DF8296 /* collection-view */ = {
+			isa = PBXGroup;
+			children = (
+				825BCDEF2952F34700DF8296 /* ReorderCollectionViewController.swift */,
+			);
+			path = "collection-view";
 			sourceTree = "<group>";
 		};
 		8260A46F288A53150032CEE3 = {
@@ -143,6 +153,7 @@
 		82B281652896F55B001881B6 /* experiments */ = {
 			isa = PBXGroup;
 			children = (
+				825BCDEE2952F32000DF8296 /* collection-view */,
 				8260A47F288A53150032CEE3 /* TextView.swift */,
 				82DA361928976FC40001D75F /* Experiment.swift */,
 			);
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82DA361A28976FC40001D75F /* Experiment.swift in Sources */,
+				825BCDF02952F34700DF8296 /* ReorderCollectionViewController.swift in Sources */,
 				8260A480288A53150032CEE3 /* TextView.swift in Sources */,
 				8260A47C288A53150032CEE3 /* AppDelegate.swift in Sources */,
 				825BCDED2952DDBD00DF8296 /* ExperimentsViewController.swift in Sources */,

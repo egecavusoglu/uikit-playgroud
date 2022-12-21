@@ -6,7 +6,12 @@ class ExperimentsViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Experiments"
+        setUpNavigationBar()
+    }
+
+    func setUpNavigationBar(){
+        self.title = "UIKit Playground"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -13,5 +13,7 @@ struct Experiment {
     let viewController: UIViewController
 }
 
-
-let EXPERIMENTS: [Experiment] = [Experiment(title: "UITextView Delegate", viewController: TextViewExperiment())]
+let EXPERIMENTS: [Experiment] = [
+    Experiment(title: "UITextView Delegate", viewController: TextViewExperiment()),
+    Experiment(title: "UICollectionView Reorder", viewController: ReorderCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+]
