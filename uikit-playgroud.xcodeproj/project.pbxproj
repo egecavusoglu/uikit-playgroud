@@ -18,6 +18,9 @@
 		8260A49D288A53180032CEE3 /* uikit_playgroudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A49C288A53180032CEE3 /* uikit_playgroudUITests.swift */; };
 		8260A49F288A53180032CEE3 /* uikit_playgroudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8260A49E288A53180032CEE3 /* uikit_playgroudUITestsLaunchTests.swift */; };
 		82B2816C2896F631001881B6 /* setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B2816B2896F631001881B6 /* setup.swift */; };
+		82BAF80C2BAFDD37008FFB32 /* BalloonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BAF80B2BAFDD37008FFB32 /* BalloonsViewController.swift */; };
+		82BAF80E2BB118BD008FFB32 /* BalloonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BAF80D2BB118BD008FFB32 /* BalloonsView.swift */; };
+		82BAF8102BB118D7008FFB32 /* BalloonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BAF80F2BB118D7008FFB32 /* BalloonLayer.swift */; };
 		82DA361A28976FC40001D75F /* Experiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DA361928976FC40001D75F /* Experiment.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,9 @@
 		8260A49C288A53180032CEE3 /* uikit_playgroudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikit_playgroudUITests.swift; sourceTree = "<group>"; };
 		8260A49E288A53180032CEE3 /* uikit_playgroudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uikit_playgroudUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		82B2816B2896F631001881B6 /* setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setup.swift; sourceTree = "<group>"; };
+		82BAF80B2BAFDD37008FFB32 /* BalloonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonsViewController.swift; sourceTree = "<group>"; };
+		82BAF80D2BB118BD008FFB32 /* BalloonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonsView.swift; sourceTree = "<group>"; };
+		82BAF80F2BB118D7008FFB32 /* BalloonLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonLayer.swift; sourceTree = "<group>"; };
 		82DA361928976FC40001D75F /* Experiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,20 +88,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		825BCDEA2952DD8000DF8296 /* experiments-table */ = {
+		825BCDEA2952DD8000DF8296 /* ExperimentsTable */ = {
 			isa = PBXGroup;
 			children = (
 				825BCDEC2952DDBD00DF8296 /* ExperimentsViewController.swift */,
 			);
-			path = "experiments-table";
+			path = ExperimentsTable;
 			sourceTree = "<group>";
 		};
-		825BCDEE2952F32000DF8296 /* collection-view */ = {
+		825BCDEE2952F32000DF8296 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
 				825BCDEF2952F34700DF8296 /* ReorderCollectionViewController.swift */,
 			);
-			path = "collection-view";
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		8260A46F288A53150032CEE3 = {
@@ -121,9 +127,9 @@
 		8260A47A288A53150032CEE3 /* uikit-playgroud */ = {
 			isa = PBXGroup;
 			children = (
-				825BCDEA2952DD8000DF8296 /* experiments-table */,
-				82B281682896F5C2001881B6 /* utils */,
-				82B281652896F55B001881B6 /* experiments */,
+				825BCDEA2952DD8000DF8296 /* ExperimentsTable */,
+				82B281682896F5C2001881B6 /* Utils */,
+				82B281652896F55B001881B6 /* Experiments */,
 				8260A47B288A53150032CEE3 /* AppDelegate.swift */,
 				8260A47D288A53150032CEE3 /* SceneDelegate.swift */,
 				8260A484288A53180032CEE3 /* Assets.xcassets */,
@@ -150,22 +156,33 @@
 			path = "uikit-playgroudUITests";
 			sourceTree = "<group>";
 		};
-		82B281652896F55B001881B6 /* experiments */ = {
+		82B281652896F55B001881B6 /* Experiments */ = {
 			isa = PBXGroup;
 			children = (
-				825BCDEE2952F32000DF8296 /* collection-view */,
+				82BAF80A2BAFDA45008FFB32 /* Balloons */,
+				825BCDEE2952F32000DF8296 /* CollectionView */,
 				8260A47F288A53150032CEE3 /* TextView.swift */,
 				82DA361928976FC40001D75F /* Experiment.swift */,
 			);
-			path = experiments;
+			path = Experiments;
 			sourceTree = "<group>";
 		};
-		82B281682896F5C2001881B6 /* utils */ = {
+		82B281682896F5C2001881B6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				82B2816B2896F631001881B6 /* setup.swift */,
 			);
-			path = utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		82BAF80A2BAFDA45008FFB32 /* Balloons */ = {
+			isa = PBXGroup;
+			children = (
+				82BAF80B2BAFDD37008FFB32 /* BalloonsViewController.swift */,
+				82BAF80D2BB118BD008FFB32 /* BalloonsView.swift */,
+				82BAF80F2BB118D7008FFB32 /* BalloonLayer.swift */,
+			);
+			path = Balloons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +249,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					8260A477288A53150032CEE3 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -298,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82BAF80C2BAFDD37008FFB32 /* BalloonsViewController.swift in Sources */,
+				82BAF80E2BB118BD008FFB32 /* BalloonsView.swift in Sources */,
 				82DA361A28976FC40001D75F /* Experiment.swift in Sources */,
 				825BCDF02952F34700DF8296 /* ReorderCollectionViewController.swift in Sources */,
 				8260A480288A53150032CEE3 /* TextView.swift in Sources */,
@@ -305,6 +324,7 @@
 				825BCDED2952DDBD00DF8296 /* ExperimentsViewController.swift in Sources */,
 				82B2816C2896F631001881B6 /* setup.swift in Sources */,
 				8260A47E288A53150032CEE3 /* SceneDelegate.swift in Sources */,
+				82BAF8102BB118D7008FFB32 /* BalloonLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +408,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -448,6 +469,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -476,6 +498,7 @@
 				DEVELOPMENT_TEAM = 93BMXJR4C7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "uikit-playgroud/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UIKit Playground";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -503,6 +526,7 @@
 				DEVELOPMENT_TEAM = 93BMXJR4C7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "uikit-playgroud/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "UIKit Playground";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
